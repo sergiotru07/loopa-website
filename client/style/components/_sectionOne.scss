@@ -3,7 +3,7 @@
 	position: relative;
 	.im1{
 		position:absolute;
-		z-index: 0;
+		z-index: 1;
 		margin-top: 10%;
 		padding-left: 7%;
 		width: 95%;
@@ -30,7 +30,6 @@
 
 .title{
 	color: $navbar-font-color;
-	font-family: "Roboto-Light";
 	font-weight: 300;
 	font-size: 45px;
 }
