@@ -1,0 +1,117 @@
+nav {
+  color: $navbar-font-color;
+  @extend .z-depth-1;
+  background-color: $primary-color;
+  width: 100%;
+  height: $navbar-height;
+  line-height: $navbar-height;
+
+  a { color: $navbar-font-color; }
+
+  .nav-wrapper {
+    position: relative;
+    height: 100%;
+
+    i {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+
+  @media #{$large-and-up} {
+    a.button-collapse { display: none; }
+  }
+
+  // Collapse button
+  .button-collapse {
+    float: right;
+    position: relative;
+    z-index: 1;
+    height: $navbar-height;
+    line-height: $navbar-height;
+    margin-right: 3%;
+
+    i {
+      font-size: 2rem;
+      height: $navbar-height;
+      line-height: $navbar-height;
+    }
+  }
+
+
+  // Logo
+  .brand-logo {
+    position: absolute;
+    color: $navbar-font-color;
+    display: inline-block;
+    font-size: $navbar-brand-font-size;
+    padding: 0;
+    margin-left: 5%;
+    white-space: nowrap;
+
+  & img {
+    width:180px;
+
+    @media #{$medium-and-down} {
+    width: 140px;
+  }
+  }
+
+  @media #{$medium-and-down} {
+    margin-left: 3%;
+  }
+
+  }
+
+
+  // Navbar Links
+  ul {
+    margin: 0 5% 0 0;
+
+    li {
+      @include transition(background-color .3s);
+      float: left;
+      padding: 0;
+
+      &:hover, &.active {
+        border-bottom: 3px solid #EEFA67;
+      }
+
+    &:last-child:hover{
+      background-color: $primary-color;
+      border-bottom: none;
+      }
+    }
+    
+    a {
+      font-size: 1rem;
+      color: $navbar-font-color;
+      display: block;
+      padding: 0 20px;
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+}
+
+// Fixed Navbar
+.navbar-fixed {
+  position: relative;
+  height: $navbar-height-mobile;
+  z-index: 998;
+
+  nav {
+    position: fixed;
+  }
+}
+@media #{$medium-and-down} {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: $navbar-height-mobile;
+    line-height: $navbar-height-mobile;
+  }
+  .navbar-fixed {
+    height: $navbar-height-mobile;
+  }
+}
