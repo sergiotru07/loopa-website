@@ -21,7 +21,7 @@ $(document).ready(function() {
 		}		
 	});
 	
-	/*Agregar transformación del menú hamburguesa a flecha y viceversa*/
+	/*Agregar transformación del menú hamburguesa a flecha y la transición de los elementos del sidebar*/
 	$('.button-collapse').on('click', function(){
 		$('#arrowEfct').removeClass('material-design-hamburger__icon--from-arrow');
 		$('#arrowEfct').toggleClass('material-design-hamburger__icon--to-arrow');

@@ -220,7 +220,7 @@ nav {
     }
   }
 }
-
+/* Estilos de la side-nav y transición de los elementos dentro de esta */
 .side-nav{
   li.logo-side{
     background-color: $primary-color;
@@ -240,18 +240,15 @@ nav {
       }
     }
   }
-  li{
-    will-change: transform;
+  li.animate{
+    will-change: transform, opacity;
     transform: translateY(300px);
-    opacity: 1;
-    transition: all 0.6s ease-out;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     &.actived{
       transform: translateY(0);
       opacity: 1;
     }
-    /* &:nth-child(1){
-      transition-delay: 0.1s;
-    } */
     &:nth-child(2){
       transition-delay: 0.2s;
     }
@@ -274,7 +271,7 @@ nav {
   }
 }
 
-
+/* ****************************************************************************** */
 
 // Fixed Navbar
 .navbar-fixed {
