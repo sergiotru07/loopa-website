@@ -22,6 +22,7 @@ nav {
     a.button-collapse { display: none; }
   }
 
+/******* Estilos para crear el menú de hamburguesa y la transformación a flecha ********/
   // Collapse button
   .button-collapse {
     float: right;
@@ -30,8 +31,6 @@ nav {
     height: $navbar-height;
     line-height: $navbar-height;
     margin-right: 5%;
-
-    /* Estilos para crear el menú de hamburguesa y la transformación a flecha */
 
     .material-design-hamburger button {
     display: block;
@@ -136,6 +135,7 @@ nav {
     @keyframes material-design-hamburger__icon--slide-from {
       0% {
         transform: rotate(-180deg);
+        background-color: $secondary-color;
       }
       100% {
       }
@@ -145,7 +145,8 @@ nav {
       0% {
         transform: rotate(45deg);
         margin: 3% 37%;
-        width: 75%;
+        width: 85%;
+        background-color: $secondary-color;
       }
       100% {
       }
@@ -155,13 +156,14 @@ nav {
       0% {
         transform: rotate(-45deg);
         margin: 3% 37%;
-        width: 75%;
+        width: 85%;
+        background-color: $secondary-color;
       }
       100% {
       }
     }
   }
-
+/* ************************************************************************************* */
 
   // Logo
   .brand-logo {
@@ -178,7 +180,7 @@ nav {
 
     @media #{$medium-and-down} {
     width: 120px;
-  }
+    }
   }
 
   @media #{$medium-and-down} {
@@ -189,40 +191,90 @@ nav {
 
 
   // Navbar Links
-  ul {
+  ul{
     margin: 0 5% 0 0;
-
-    li {
+    li{
       @include transition(background-color .3s);
       float: left;
       padding: 0;
 
       &:hover, &.active {
         border-bottom: 3px solid #EEFA67;
-      }
-
+    }
     &:nth-child(4){
       margin-right: 20px;
-      }
-
+    }
     &:last-child:hover{
       background-color: $primary-color;
       border-bottom: none;
-      }
     }
-    
-    a {
+  }
+    a{
       font-size: 1rem;
       color: $navbar-font-color;
       display: block;
       padding: 0 20px;
     }
-
-    &.left {
+    &.left{
       float: left;
     }
   }
 }
+
+.side-nav{
+  li.logo-side{
+    background-color: $primary-color;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: $primary-color !important;
+      border-bottom: none;
+    }
+    img{
+      width:50%;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+  }
+  li{
+    will-change: transform;
+    transform: translateY(300px);
+    opacity: 1;
+    transition: all 0.6s ease-out;
+    &.actived{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    /* &:nth-child(1){
+      transition-delay: 0.1s;
+    } */
+    &:nth-child(2){
+      transition-delay: 0.2s;
+    }
+    &:nth-child(3){
+      transition-delay: 0.3s;
+    }
+    &:nth-child(4){
+      transition-delay: 0.4s;
+      margin-right: 0;
+    }
+    &:nth-child(5){
+      transition-delay: 0.5s;
+    }
+    &:nth-child(6){
+      transition-delay: 0.6s;
+      &:hover{
+        background-color: #f8bbd0;
+      }
+    }
+  }
+}
+
+
 
 // Fixed Navbar
 .navbar-fixed {

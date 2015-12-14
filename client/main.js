@@ -25,10 +25,12 @@ $(document).ready(function() {
 	$('.button-collapse').on('click', function(){
 		$('#arrowEfct').removeClass('material-design-hamburger__icon--from-arrow');
 		$('#arrowEfct').toggleClass('material-design-hamburger__icon--to-arrow');
+		$('.side-nav .animate').toggleClass('actived');
 	});		
 
 	$('.drag-target').on('click', function(){
 		$('#arrowEfct').removeClass('material-design-hamburger__icon--to-arrow');
 		$('#arrowEfct').toggleClass('material-design-hamburger__icon--from-arrow');
+		$('.side-nav li').removeClass('actived');
 	});	
 })
