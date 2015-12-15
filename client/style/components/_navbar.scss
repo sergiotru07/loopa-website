@@ -172,7 +172,7 @@ nav {
     display: inline-block;
     font-size: $navbar-brand-font-size;
     padding: 0;
-    margin-left: 5%;
+    margin-left: 4%;
     white-space: nowrap;
 
   & img {
@@ -192,7 +192,7 @@ nav {
 
   // Navbar Links
   ul{
-    margin: 0 5% 0 0;
+    margin-right: 4%;
     li{
       @include transition(background-color .3s);
       float: left;
