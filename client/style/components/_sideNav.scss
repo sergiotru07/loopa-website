@@ -42,7 +42,7 @@
   }
   a {
     color: #444;
-    display: inline;
+    display: block;
     font-size: 1rem;
     height: 64px;
     line-height: 64px;
@@ -147,30 +147,23 @@
       transform: translateY(0);
       opacity: 1;
     }
-    &:nth-child(2){
-      transition-delay: 0.2s;
-    }
-    &:nth-child(3){
-      transition-delay: 0.3s;
-    }
     &:nth-child(4){
-      transition-delay: 0.4s;
       margin-right: 0;
     }
-    &:nth-child(5){
-      transition-delay: 0.5s;
-    }
-    &:nth-child(6){
-      transition-delay: 0.6s;
-      &:hover{
-        background-color: rgba(0, 0, 0, 0.06);
-      }
+    &:nth-child(6):hover{
+        background-color: rgba(0, 0, 0, 0.03);
     }
     .icon-sidebar{
       border: 0;
       width: 20px;
       display: inline;
       margin-bottom: -3px;
+      margin-right: 12px;
+    }
+  }
+  @for $i from 2 through 6{
+    li:nth-child(#{$i}){
+    transition-delay: $i * 0.1s;
     }
   }
 }
