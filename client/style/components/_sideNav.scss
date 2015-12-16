@@ -30,14 +30,19 @@
   li {
     float: none;
     padding: 0 $sidenav-padding-right;
-    &:hover, &.active { 
-      background-color: #f8bbd0; 
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.03);
+      border-bottom: none;
+    } 
+    &.active { 
+      background-color: rgba(0, 0, 0, 0.06);
+      font-weight: 700;
       border-bottom: none;
     }
   }
   a {
     color: #444;
-    display: block;
+    display: inline;
     font-size: 1rem;
     height: 64px;
     line-height: 64px;
@@ -112,3 +117,63 @@
 
   will-change: opacity;
 }
+
+/* Estilos de la side-nav y transición de los elementos dentro de esta */
+.side-nav{
+  li.logo-side{
+    background-color: $primary-color;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: $primary-color !important;
+      border-bottom: none;
+    }
+    img{
+      width:50%;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+  }
+  li.animate{
+    will-change: transform, opacity;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    &.actived{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    &:nth-child(2){
+      transition-delay: 0.2s;
+    }
+    &:nth-child(3){
+      transition-delay: 0.3s;
+    }
+    &:nth-child(4){
+      transition-delay: 0.4s;
+      margin-right: 0;
+    }
+    &:nth-child(5){
+      transition-delay: 0.5s;
+    }
+    &:nth-child(6){
+      transition-delay: 0.6s;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+    }
+    .icon-sidebar{
+      border: 0;
+      width: 20px;
+      display: inline;
+      margin-bottom: -3px;
+    }
+  }
+}
+
+/* ****************************************************************************** */
+

@@ -106,7 +106,6 @@ nav {
       }
       100% {
         transform: rotate(180deg);
-        background-color: $secondary-color;
       }
     }
 
@@ -115,9 +114,8 @@ nav {
       }
       100% {
         transform: rotate(45deg);
-        margin: 3% 37%;
-        width: 85%;
-        background-color: $secondary-color;
+        margin: -10% 70%;
+        width: 46%;
       }
     }
 
@@ -126,16 +124,14 @@ nav {
       }
       100% {
         transform: rotate(-45deg);
-        margin: 3% 37%;
-        width: 85%;
-        background-color: $secondary-color;
+        margin: -10% 70%;
+        width: 46%;
       }
     }
 
     @keyframes material-design-hamburger__icon--slide-from {
       0% {
         transform: rotate(-180deg);
-        background-color: $secondary-color;
       }
       100% {
       }
@@ -146,7 +142,6 @@ nav {
         transform: rotate(45deg);
         margin: 3% 37%;
         width: 85%;
-        background-color: $secondary-color;
       }
       100% {
       }
@@ -157,7 +152,6 @@ nav {
         transform: rotate(-45deg);
         margin: 3% 37%;
         width: 85%;
-        background-color: $secondary-color;
       }
       100% {
       }
@@ -220,58 +214,6 @@ nav {
     }
   }
 }
-/* Estilos de la side-nav y transición de los elementos dentro de esta */
-.side-nav{
-  li.logo-side{
-    background-color: $primary-color;
-    height: 160px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    &:hover{
-      background-color: $primary-color !important;
-      border-bottom: none;
-    }
-    img{
-      width:50%;
-      &:hover{
-        background-color: $primary-color;
-      }
-    }
-  }
-  li.animate{
-    will-change: transform, opacity;
-    transform: translateY(300px);
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    &.actived{
-      transform: translateY(0);
-      opacity: 1;
-    }
-    &:nth-child(2){
-      transition-delay: 0.2s;
-    }
-    &:nth-child(3){
-      transition-delay: 0.3s;
-    }
-    &:nth-child(4){
-      transition-delay: 0.4s;
-      margin-right: 0;
-    }
-    &:nth-child(5){
-      transition-delay: 0.5s;
-    }
-    &:nth-child(6){
-      transition-delay: 0.6s;
-      &:hover{
-        background-color: #f8bbd0;
-      }
-    }
-  }
-}
-
-/* ****************************************************************************** */
 
 // Fixed Navbar
 .navbar-fixed {
