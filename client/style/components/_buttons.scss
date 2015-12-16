@@ -113,7 +113,8 @@ button.btn-floating {
       text-align: right;
       right: 64px;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
       height: 100%;
       left: initial;
       width: 500px; /*width 100% only goes to width of button container */
