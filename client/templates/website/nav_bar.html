@@ -1,34 +1,33 @@
 <template name="navBar">
-	<div class="navbar-fixed">
+    <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left"><img src="horizontal_logo.svg"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <!-- Estructura del menú hamburguesa -->
                     <section class="material-design-hamburger">
                         <button class="material-design-hamburger__icon">
-                            <span class="material-design-hamburger__layer" id="arrowEfct"></span>
+                            <span class="material-design-hamburger__layer {{arrowAnimationClass}}" id="arrowEfct"></span>
                         </button>
                     </section>
-                <!-- ****************************** -->
                 </a>
-
                 <ul class="right hide-on-med-and-down horizontal-options">
-                	{{#each menuOptions}}
-                		<li><a href="#" class="waves-effect waves-light">{{option}}</a></li>
-                	{{/each}}
-                    <li><a class="waves-effect waves-pink btn">Login</a></li>
+                    {{#each menuOptions}}
+                        {{#unless optionIs option "LOGIN"}}
+                            <li><a href="#" class="waves-effect waves-light">{{option}}</a></li>
+                        {{else}}
+                            <li><a class="waves-effect waves-pink btn">{{option}}</a></li>
+                        {{/unless}}
+                    {{/each}}
                 </ul>
-
-                <ul class="side-nav" id="mobile-demo">
+                <ul class="side-nav {{openSidenav}}" id="mobile-demo">
                     <li class="logo-side"><img src="vertical_logo.svg"></li>
-                	{{#each menuOptions}}
-                    	<li class="sideBar-options animate"><a href=""><img src="{{iconPath}}" class="icon-sidebar">{{option}}</a></li>
-                	{{/each}}
-                    <li class="animate"><a href=""><img src="icons-sidebar/account-box.svg" class="icon-sidebar">Login</a></li>
+                    {{#each menuOptions}}
+                        <li class="sideBar-options animate {{optionsAnimation}}">
+                            <a href=""><img src="{{iconPath}}" class="icon-sidebar">{{option}}</a>
+                        </li>
+                    {{/each}}
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="dark-bg"></div>
 </template>

@@ -11,9 +11,15 @@
   background-color: $sidenav-bg-color;
   z-index: 999;
   overflow-y: auto;
+  will-change: left;
+  left: -250%;
+  transition: left 0.5s ease-in-out;
+
+  &.open-sidenav{
+    left: 0;
+  }
 
   @extend .z-depth-1;
-  will-change: left;
 
   // Right Align
   &.right-aligned {

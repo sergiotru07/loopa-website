@@ -1,0 +1,48 @@
+<template name="website">
+    <div class="website-container" style="overflow: {{bodyOverflow}}; position: absolute;top: 0;bottom: 0;width: 100%">
+        {{#if isSidenavOpen}}
+            <div id="sidenav-overlay"></div>
+        {{/if}}
+        {{> navBar}}
+        {{> sectionOne}}
+ 		{{> features}}
+{{!--         <div class="container">
+            <!-- estructura de la sección 1 para desktop -->
+            <section class="hide-on-med-and-down">
+                <div class="contenedor-desktop blue lighten-1">
+                    <div class="video">
+                        <div class="inner-container">
+                            <img class="responsive-img" src="imac.png">
+                            <iframe class="responsive-video" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <h1 class="col s12 center-align title white-text">Lorem ipsum dolor sit amet, mutat graeco</h1>
+                        <div class="botones">
+                            <div class="col s6 center-align" id="btn1"><a class="waves-effect waves-pink btn-large tkc" id="tkc">Toma un curso</a></div>
+                            <div class="col s6 center-align" id="btn2"><a class="waves-effect waves-orange btn-large yellow grey-text text-darken-3 mkc" id="mkc">Crea un Curso</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ************************************ -->
+            <section class="hide-on-large-only">
+                <div class="contenedor-mobile blue lighten-1">
+                    <h1 class="center-align title-mobile white-text">Lorem ipsum dolor sit amet, mutat graeco</h1>
+                    <div class="video-mobile">
+                        <iframe class="iframe-mobile" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="botones-mobile">
+                        <div class="btn1">
+                            <div class="right-align" id="btn1"><a class="waves-effect waves-pink btn-large tkc" id="tkc">Toma un curso</a></div>
+                        </div>
+                        <div class="btn2">
+                            <div class="left-align" id="btn2"><a class="waves-effect waves-orange btn-large yellow grey-text text-darken-3 mkc" id="mkc">Crea un Curso</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> --}}
+        <div class="dark-bg" style="display: {{darkBgDisplay}}"></div>
+    </div>
+</template>

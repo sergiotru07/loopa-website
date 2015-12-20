@@ -5,8 +5,7 @@ Meteor.startup(function() {
         let sideNavLeft = parseInt($(".side-nav").css("left"));
 
         if ($(this).width() >= 993 && sideNavLeft >= 0) {
-            $(".button-collapse").sideNav("hide")
-            closeSideNav();
+            Session.set("isSidenavOpen", false);
         }
 
         if ($(this).width() <= 1180) {
