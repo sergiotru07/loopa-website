@@ -1,63 +1,26 @@
+.feature-title{
+	font-size: 28px;
+    color: #484848;
+}
+
 .features{
 	width: 92%; 
 	margin:50px auto !important;
 }
-.feature-one{
-	height: 600px;
-	.carta{
-		height: 580px;
-		.test{
-			height:600px;
-		}
-		.test2{
-			height: 580px;
-		}
-	}
-}
-.feature-two{
-	height: 350px;
-	.carta{
-		height: 330px;
-		.test{
-			height:350px;
-		}
-		.test2{
-			height:330px;
-		}
-	}
-}
-.feature-three, .feature-four{
-	height: 250px;
-	.carta{
-		height: 230px;
-	}
-}
-.feature-five{
-	height: 400px;
-	.carta{
-		height: 380px;
-	}
-}
-.feature-six{
-	height: 200px;
-	.carta{
-		height: 180px;
-	}
-}
 
-.carta{
+.card{
 	position:relative;
 	overflow:hidden;
 	width:99.9%;
 	margin: 10px auto;
 	background-color: white;
-	border-radius: 5px;
+	border-radius: 3px;
 }
-.test{
+.card-front{
 	width:100%;
 	position:absolute;
-	border-radius: 5px;
-	.title{
+	border-radius: 3px;
+	&--title{
 		width:100%;
 		height:60px;
 		line-height: 60px;
@@ -70,27 +33,79 @@
     	font-weight: 300;
 	}
 }
-.test2{
+.card-back{
 	width:100%;
 	position:absolute;
 	transform: translateY(600px);
 	will-change: transform;
 	transition: transform .5s linear;
-	border-radius: 5px;
+	border-radius: 3px;
 	z-index:2;
-	.title2{
+	&--title{
 		width:100%;
 		height:60px;
 		line-height: 60px;
-		background: linear-gradient(to top, rgba(46,46,46,0), rgba(46,46,46,0.9));
+		/* background: linear-gradient(to top, rgba(46,46,46,0), rgba(46,46,46,0.9)); */
 		top: 0;
 		right: 0;
     	margin-bottom: 20px;
     	font-size: 18px;
     	font-weight: 300;
 	}
-	.contenido p{
+	&--content {
 		width:100%;
 		overflow:scroll;
+	}
+}
+
+.feature-one{
+	height: 550px;
+	&-card{
+		height: 530px;
+		&-front{
+			height:550px;
+		}
+		&-back{
+			height: 530px;
+		}
+	}
+}
+
+.feature-two, .feature-three, .feature-four{
+	height: 275px;
+	&-card{
+		height: 255px;
+		&-front{
+			height:275px;
+		}
+		&-back{
+			height: 255px;
+		}
+	}
+}
+
+.feature-five{
+	height: 350px;
+	&-card{
+		height: 330px;
+		&-front{
+			height:350px;
+		}
+		&-back{
+			height: 330px;
+		}
+	}
+}
+
+.feature-six{
+	height: 200px;
+	&-card{
+		height: 180px;
+		&-front{
+			height:200px;
+		}
+		&-back{
+			height: 180px;
+		}
 	}
 }

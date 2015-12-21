@@ -1,3 +1,9 @@
+.wraper-cont{
+	padding-bottom: 40px;
+	 @media #{$medium-and-down}{
+    	padding-bottom: 0;
+    }
+}
 .contenedor-desktop{
 	display: flex;
 	flex-flow: row nowrap;

@@ -1,0 +1,33 @@
+<template name="featuresSection">
+    <div class="container">
+        <h4 class="feature-title center-align" style="margin-top: 100px;">Nuestros Beneficios</h4>
+        <div class="features row">
+            <div class="feature-one col m3 l4">
+                {{> featureCard cardsContent.firstCard}}
+            </div>
+            <div class="col m12 l4">
+                <div class="row">
+                    <div class="feature-two col l12">
+                        {{> featureCard cardsContent.secondCard}}
+                    </div>
+                    <div class="feature-three col l6">
+                        {{> featureCard cardsContent.thirdCard}}
+                    </div>
+                    <div class="feature-four col l6">
+                        {{> featureCard cardsContent.fourthCard}}
+                    </div>
+                </div>
+            </div>
+            <div class="col m12 l4">
+                <div class="row">
+                    <div class="feature-five col l12">
+                        {{> featureCard cardsContent.fifthCard}}
+                    </div>
+                    <div class="feature-six col l12">
+                        {{> featureCard cardsContent.sixthCard}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
