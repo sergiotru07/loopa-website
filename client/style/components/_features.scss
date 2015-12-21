@@ -1,11 +1,30 @@
 .feature-title{
 	font-size: 28px;
     color: #484848;
+
+    @media #{$medium-and-down}{
+		margin-top: 40px !important;
+		font-size: 26px;
+	}
+
+    @media #{$small-and-down}{
+		margin-top: 30px !important;
+		font-size: 22px;
+	}
 }
 
 .features{
 	width: 92%; 
 	margin:50px auto !important;
+	
+	@media #{$medium-and-down}{
+		margin:30px auto !important;
+	}
+
+	@media #{$small-and-down}{
+		width:98%;
+		margin:20px auto !important;
+	}
 }
 
 .card{
@@ -25,7 +44,7 @@
 	border-radius: 3px;
 	z-index:2;
 	// background: linear-gradient(to top, rgba(46,46,46,0), rgba(46,46,46,0.2));
-	background: linear-gradient(to bottom, rgba(46,46,46,0), rgba(46,46,46,0.5));
+	background: linear-gradient(to bottom, rgba(46,46,46,0), rgba(46,46,46,0.4));
 	&--title{
 		width:100%;
 		height:60px;
@@ -78,19 +97,8 @@
 			height: calc(#{$feature-five-height} - 20px);
 		}
 	}
-
 	.card-back {
 		transform: translateY(280px);
-	}
-
-	@media #{$medium-and-down}{
-		height: $feature-five-six-height-medium;
-		&-card{
-			height: calc(#{$feature-five-six-height-medium} - 20px);
-			&-back{
-			height: calc(#{$feature-five-six-height-medium} - 20px);
-			}
-		}
 	}
 }
 
@@ -102,12 +110,13 @@
 			height: calc(#{$feature-six-height} - 20px);
 		}
 	}
-
 	.card-back {
 		transform: translateY(130px);
 	}
+}
 
-	@media #{$medium-and-down}{
+@media #{$medium-and-down}{
+	.feature-five, .feature-six{
 		height: $feature-five-six-height-medium;
 		&-card{
 			height: calc(#{$feature-five-six-height-medium} - 20px);
@@ -115,5 +124,29 @@
 			height: calc(#{$feature-five-six-height-medium} - 20px);
 			}
 		}
+		.card-back {
+			transform: translateY(calc(#{$feature-five-six-height-medium} - 70px));
+		}
+	}
+	.cont-small{
+		margin-bottom: 0;
+	}	
+}
+
+@media #{$small-and-down}{
+	.feature-one, .feature-two, .feature-three, .feature-four, .feature-five, .feature-six{
+		height: $features-height-small;
+		&-card{
+			height: calc(#{$features-height-small} - 20px);
+			&-back{
+			height: calc(#{$features-height-small} - 20px);
+			}
+		}
+		.card-back {
+			transform: translateY(calc(#{$features-height-small} - 70px));
+		}
+	}
+	.cont-small{
+		margin-bottom: 0;
 	}
 }
