@@ -1,3 +1,9 @@
+const [largeHeight, mediumHeight, smallHeight] = [
+    [550, 275, 275, 275, 350, 200],
+    [550, 275, 275, 275, 250, 250],
+    200
+];
+
 let cardsContent = {
     firstCard: {
         featureIndex: "feature-one",
@@ -37,21 +43,30 @@ let cardsContent = {
     }
 };
 
-let getTranslateHeight = (name) => {
+let _heightValidation = (name, heightArr) => {
     if (name === "feature-one") {
-        return 550;
+        return heightArr[0];
     } else if (name === "feature-two") {
-        return 275;
+        return heightArr[1];
     } else if (name === "feature-three") {
-        return 275;
+        return heightArr[2];
     } else if (name === "feature-four") {
-        return 275;
+        return heightArr[3];
     } else if (name === "feature-five") {
-        return 350;
+        return heightArr[4];
     } else if (name === "feature-six") {
-        return 200;
-    } else {
-        return 600;
+        return heightArr[5];
+    }
+};
+
+let getTranslateHeight = (name) => {
+    let windowWidth = Session.get("windowWidth");
+    if (windowWidth >= 993) {
+        return _heightValidation(name, largeHeight);
+    } else if (windowWidth < 993 && windowWidth > 600) {
+        return _heightValidation(name, mediumHeight);
+    } else if (windowWidth <= 600) {
+        return smallHeight;
     }
 };
 
@@ -67,7 +82,6 @@ Template.featuresSection.events({
             targetName = $target.attr("name"),
             translateHeight = getTranslateHeight(targetName) - 70;
 
-            console.log(getTranslateHeight(targetName));
         $target
             .find(".card-back")
             .css("transform", `translateY(${translateHeight}px)`);

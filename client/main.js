@@ -1,8 +1,11 @@
+Session.set("windowWidth", $(window).width());
+
 Meteor.startup(function() {
 
     $(window).resize(function() {
 
         let sideNavLeft = parseInt($(".side-nav").css("left"));
+        Session.set("windowWidth", $(this).width());
 
         if ($(this).width() >= 993 && sideNavLeft >= 0) {
             Session.set("isSidenavOpen", false);
