@@ -38,9 +38,11 @@
 
 .card-back{
 	width:100%;
+	height:50px;
 	position:absolute;
-	will-change: transform;
-	transition: transform .5s linear;
+	bottom:0;
+	will-change: height;
+	transition: height .5s linear;
 	border-radius: 3px;
 	z-index:2;
 	// background: linear-gradient(to top, rgba(46,46,46,0), rgba(46,46,46,0.2));
@@ -65,85 +67,40 @@
 	height: $feature-one-height;
 	&-card{
 		height: calc(#{$feature-one-height} - 20px);
-		&-back{
-			height: calc(#{$feature-one-height} - 20px);
-		}
-	}
-
-	.card-back {
-		transform: translateY(480px);
 	}
 }
 
-.feature-two, .feature-three, .feature-four{
-	height: $feature-two-three-four-height;
+.feature-two, .feature-five{
+	height: $feature-two-five-height;
 	&-card{
-		height: calc(#{$feature-two-three-four-height} - 20px);
-		&-back{
-			height: calc(#{$feature-two-three-four-height} - 20px);
-		}
-	}
-
-	.card-back {
-		transform: translateY(205px);
+		height: calc(#{$feature-two-five-height} - 20px);
 	}
 }
 
-.feature-five{
-	height: $feature-five-height;
+.feature-three, .feature-four{
+	height: $feature-three-four-height;
 	&-card{
-		height: calc(#{$feature-five-height} - 20px);
-		&-back{
-			height: calc(#{$feature-five-height} - 20px);
-		}
-	}
-	.card-back {
-		transform: translateY(280px);
-	}
-}
-
-.feature-six{
-	height: $feature-six-height;
-	&-card{
-		height: calc(#{$feature-six-height} - 20px);
-		&-back{
-			height: calc(#{$feature-six-height} - 20px);
-		}
-	}
-	.card-back {
-		transform: translateY(130px);
+		height: calc(#{$feature-three-four-height} - 20px);
 	}
 }
 
 @media #{$medium-and-down}{
-	.feature-five, .feature-six{
-		height: $feature-five-six-height-medium;
+	.feature-four, .feature-five{
+		height: $feature-four-five-height-medium;
 		&-card{
-			height: calc(#{$feature-five-six-height-medium} - 20px);
-			&-back{
-			height: calc(#{$feature-five-six-height-medium} - 20px);
-			}
-		}
-		.card-back {
-			transform: translateY(calc(#{$feature-five-six-height-medium} - 70px));
+			height: calc(#{$feature-four-five-height-medium} - 20px);
 		}
 	}
 	.cont-small{
 		margin-bottom: 0;
-	}	
+	}
 }
 
 @media #{$small-and-down}{
-	.feature-one, .feature-two, .feature-three, .feature-four, .feature-five, .feature-six{
+	.feature-one, .feature-two, .feature-three, .feature-four, .feature-five{
 		height: $features-height-small;
 		&-card{
 			height: calc(#{$features-height-small} - 20px);
-			&-back{
-			height: calc(#{$features-height-small} - 20px);
-			}
-		}
-		.card-back {
-			transform: translateY(calc(#{$features-height-small} - 70px));
 		}
 	}
 	.cont-small{
