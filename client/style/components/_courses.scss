@@ -1,0 +1,119 @@
+.courses-section-title{
+	padding-top: 80px;
+	padding-bottom: 40px;
+
+	@media #{$medium-and-down} {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	@media #{$small-and-down} {
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+}
+.courses{
+	width: 92%;
+	margin: 0 auto !important;
+	@media #{$small-and-down} {
+		width: 98%;
+	}
+	.course-card{
+		height:$course-card-height;
+		@media #{$small-and-down} {
+		height: $course-card-height-small;
+	}
+		&-main{
+			position:relative;
+			width:99.9%;
+			margin: 10px auto;
+			border-radius: 3px;
+			height: calc(#{$course-card-height} - 20px);
+			@media #{$small-and-down} {
+				height: calc(#{$course-card-height-small} - 20px);
+			}
+			&-info{
+				position: absolute;
+				bottom: 0;
+				height: 70px;
+				width: 100%;
+				background-color: rgba(46,46,46,0.4);
+				z-index: 2;
+				@media #{$small-and-down} {
+					height: 50px;
+				}
+				&--title{
+					font-size: 20px;
+				    padding-left: 15px;
+				    margin-bottom: 1px;
+				    margin-top: 15px;
+					@media #{$small-and-down} {
+						font-size: 16px;
+						margin-top: 18px;
+					}
+				}
+				&--subtitle{
+					padding-left: 15px;
+				    font-weight: 300;
+				    font-size: 13px;
+				    margin-top: 4px;
+				}
+			}
+		}
+	}
+}
+
+.course-one{
+	background: url("cursos/web.png");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+.course-two{
+	background: url("cursos/movil.png");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+
+.course-three{
+	background: url("cursos/design.jpg");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+
+.course-four{
+	background: url("cursos/programmingFlat.jpg");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+
+.course-five{
+	background: url("cursos/trading.jpg");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+
+.course-six{
+	background: url("cursos/fotografia.png");
+	background-size: 99.9% 350px;
+	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-size: 99.9% 230px;
+	}
+}
+
+

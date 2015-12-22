@@ -1,0 +1,10 @@
+<template name="coursesSection">
+    <div class="wraper-cont blue lighten-1">
+        <div class="container">
+            <h4 class="section-title courses-section-title center-align white-text">Nuestros Cursos</h4>
+            <div class="courses row">
+                {{#each coursesInfo}} {{> courseCard}} {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
