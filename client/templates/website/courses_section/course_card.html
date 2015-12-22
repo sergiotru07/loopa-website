@@ -1,7 +1,7 @@
 <template name="courseCard">
-    <div class="course-card col s6 m6 l4">
+    <div class="course-card col s6 m6 l4" style="height: {{courseCardHeight}}px;">
         <a href="#">
-            <div class="course-card-main {{courseIndex}} z-depth-1 hoverable" name="{{courseIndex}}">
+            <div class="course-card-main {{courseIndex}} z-depth-1 hoverable" name="{{courseIndex}}" style="height: {{courseMainCardHeight}}px">
                 <div class="course-card-main-info">
                     <h5 class="course-card-main-info--title white-text">{{courseTitle}}</h5>
                     <h6 class="course-card-main-info--subtitle white-text hide-on-small-only">Total de cursos: {{totalCourses}}</h6>
