@@ -1,12 +1,14 @@
-Session.set("windowWidth", $(window).width());
-
 Meteor.startup(function() {
-
+    Session.set("windowWidth", $(window).width());
     $(window).resize(function() {
 
-        let sideNavLeft = $(".sidenav").css("transform");
         const matrixOpenSideNav="matrix(1, 0, 0, 1, 0, 0)"
-        Session.set("windowWidth", $(this).width());
+        let sideNavLeft = $(".sidenav").css("transform"),
+            windowWidth = $(this).width(),
+            courseCardWidth = $(".course-card").width();
+
+        Session.set("windowWidth", windowWidth);
+        Session.set("courseCardWidth", courseCardWidth);
 
         if ($(this).width() >= 993 && sideNavLeft == matrixOpenSideNav) {
             Session.set("isSidenavOpen", false);
@@ -20,5 +22,5 @@ Meteor.startup(function() {
             $('#mkc').addClass('btn-large').removeClass('btn');
         }
     });
-    
+
 });
