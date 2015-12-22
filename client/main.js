@@ -4,10 +4,11 @@ Meteor.startup(function() {
 
     $(window).resize(function() {
 
-        let sideNavLeft = parseInt($(".side-nav").css("left"));
+        let sideNavLeft = $(".sidenav").css("transform");
+        const matrixOpenSideNav="matrix(1, 0, 0, 1, 0, 0)"
         Session.set("windowWidth", $(this).width());
 
-        if ($(this).width() >= 993 && sideNavLeft >= 0) {
+        if ($(this).width() >= 993 && sideNavLeft == matrixOpenSideNav) {
             Session.set("isSidenavOpen", false);
         }
 
