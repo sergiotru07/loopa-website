@@ -39,17 +39,25 @@
 				width: 100%;
 				background-color: rgba(46,46,46,0.4);
 				z-index: 2;
+				@media #{$medium-and-down} {
+					height: 55px;
+				}
 				@media #{$small-and-down} {
-					height: 50px;
+					height: 40px;
 				}
 				&--title{
 					font-size: 20px;
 				    padding-left: 15px;
 				    margin-bottom: 1px;
 				    margin-top: 15px;
+				    @media #{$medium-and-down} {
+						font-size: 18px;
+						margin-top: 10px;
+					}
 					@media #{$small-and-down} {
-						font-size: 16px;
-						margin-top: 18px;
+						text-align: center;
+						font-size: 15px;
+						margin-top: 10px;
 					}
 				}
 				&--subtitle{
@@ -64,56 +72,38 @@
 }
 
 .course-one{
-	background: url("cursos/web.png");
-	background-size: 99.9% 350px;
+	background: url("cursos/web.svg");
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 .course-two{
-	background: url("cursos/movil.png");
-	background-size: 99.9% 350px;
+	background: url("cursos/movil.svg");
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 
 .course-three{
 	background: url("cursos/design.jpg");
-	background-size: 99.9% 350px;
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 
 .course-four{
 	background: url("cursos/programmingFlat.jpg");
-	background-size: 99.9% 350px;
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 
 .course-five{
 	background: url("cursos/trading.jpg");
-	background-size: 99.9% 350px;
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 
 .course-six{
 	background: url("cursos/fotografia.png");
-	background-size: 99.9% 350px;
+	background-size: 99.9%;
 	background-repeat: no-repeat;
-	@media #{$small-and-down} {
-		background-size: 99.9% 230px;
-	}
 }
 
 
