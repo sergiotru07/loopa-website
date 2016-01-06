@@ -1,0 +1,33 @@
+<template name="mostPopularCard">
+    <div class="card popular-card">
+        <a href="">
+            <div class="card-image popular-card-image">
+                <img src="{{imagePath}}">
+                <span class="card-title popular-card-title">{{courseTitle}}</span>
+            </div>
+        </a>
+        <div class="card-content popular-card-content">
+            <p>{{cardContent}}</p>
+        </div>
+        <div class="card-action card-action-container popular-card-action">
+            <img class="icon-people" src="people.svg">
+            <p class="grey-text">{{enrolled}}</p>
+        </div>
+    </div>
+</template>
+
+<template name="mostPopularCardSmallScreen">
+    <div class="contenedor-small-screen hide-on-med-and-up z-depth-1">
+        <div class="contenedor-small-screen-img">
+            <a href="" title=""><img src="{{imagePath}}"></a>
+        </div>
+        <div class="contenedor-small-screen-content">
+            <h5 class="contenedor-small-screen-content--title">{{courseTitle}}</h5>
+            <p class="contenedor-small-screen-content--description">{{cardContent}}</p>
+            <div class="contenedor-small-screen-content--info">
+                <img class="icon-people" src="people.svg">
+                <p class="students grey-text">{{enrolled}}</p>
+            </div>
+        </div>
+    </div>
+</template>

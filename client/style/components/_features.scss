@@ -1,14 +1,14 @@
 .features{
 	width: 92%; 
-	margin:50px auto !important;
+	margin:0 auto !important;
 	
 	@media #{$medium-and-down}{
-		margin:30px auto !important;
+		margin:0 auto !important;
 	}
 
 	@media #{$small-and-down}{
 		width:98%;
-		margin:20px auto !important;
+		margin:0 auto !important;
 	}
 }
 
@@ -36,8 +36,16 @@
 		top: 0;
 		right: 0;
     	margin-bottom: 20px;
-    	font-size: 18px;
+    	font-size: 20px;
     	font-weight: 300;
+
+    	@media #{$medium-and-down}{
+			font-size: 18px;
+		}
+
+		@media #{$small-and-down}{
+			font-size: 16px;
+		}
 	}
 	&--content {
 		width:100%;
@@ -47,7 +55,18 @@
 .feature-one{
 	height: $feature-one-height;
 	&-card{
+		background: url("features/feature_one.svg");
+		background-size: 80% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
 		height: calc(#{$feature-one-height} - 20px);
+
+		@media #{$small-and-down}{
+			background: url("features/feature_one_mobile.svg");
+			background-size: 80% 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 	}
 	.card-back {
 		transform: translateY(480px);
@@ -72,6 +91,44 @@
 	.card-back {
 		transform: translateY(260px);
 	}
+}
+
+.feature-two-card{
+	background: url("features/feature_two_new.svg");
+	background-size: 80% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.feature-three-card{
+	background: url("features/feature_three.svg");
+	background-size: 80% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	@media #{$small-and-down}{
+		background: url("features/feature_three_mobile.svg");
+		background-size: 80% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.feature-four-card{
+	background: url("features/feature_four.svg");
+	background-size: 80% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media #{$small-and-down}{
+		background: url("features/feature_four_mobile.svg");
+		background-size: 80% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.feature-five-card{
+	background: url("features/feature_five.svg");
+	background-size: 80% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 @media #{$medium-and-down}{

@@ -1,20 +1,9 @@
-.courses-section-title{
-	padding-top: 80px;
-	padding-bottom: 40px;
-
-	@media #{$medium-and-down} {
-		padding-top: 40px;
-		padding-bottom: 20px;
-	}
-
-	@media #{$small-and-down} {
-		padding-top: 25px;
-		padding-bottom: 10px;
-	}
-}
 .courses{
 	width: 92%;
 	margin: 0 auto !important;
+	@media #{$medium-and-down} {
+		padding-bottom: 40px;
+	}
 	@media #{$small-and-down} {
 		width: 98%;
 	}
@@ -83,25 +72,25 @@
 }
 
 .course-three{
-	background: url("cursos/design.jpg");
+	background: url("cursos/design.svg");
 	background-size: 99.9%;
 	background-repeat: no-repeat;
 }
 
 .course-four{
-	background: url("cursos/programmingFlat.jpg");
+	background: url("cursos/emprendimiento2.svg");
 	background-size: 99.9%;
 	background-repeat: no-repeat;
 }
 
 .course-five{
-	background: url("cursos/trading.jpg");
+	background: url("cursos/trading.svg");
 	background-size: 99.9%;
 	background-repeat: no-repeat;
 }
 
 .course-six{
-	background: url("cursos/fotografia.png");
+	background: url("cursos/fotografia.svg");
 	background-size: 99.9%;
 	background-repeat: no-repeat;
 }
