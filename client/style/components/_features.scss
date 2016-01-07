@@ -55,18 +55,18 @@
 .feature-one{
 	height: $feature-one-height;
 	&-card{
-		background: url("features/feature_one.svg");
+		background: url("features/feature_one_new.svg");
 		background-size: 80% 100%;
 		background-position: center;
 		background-repeat: no-repeat;
 		height: calc(#{$feature-one-height} - 20px);
 
-		@media #{$small-and-down}{
+		/* @media #{$small-and-down}{
 			background: url("features/feature_one_mobile.svg");
 			background-size: 80% 100%;
 			background-position: center;
 			background-repeat: no-repeat;
-		}
+		} */
 	}
 	.card-back {
 		transform: translateY(480px);
@@ -104,12 +104,18 @@
 	background-size: 80% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	@media #{$small-and-down}{
+		background-size: 80% 115%;
+	}
 }
 .feature-four-card{
-	background: url("features/feature_four.svg");
+	background: url("features/feature_four_new.svg");
 	background-size: 80% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	@media #{$small-and-down} {
+		background-position: 50% -9px;	
+	}
 }
 .feature-five-card{
 	background: url("features/feature_five.svg");
@@ -147,4 +153,11 @@
 	.cont-small{
 		margin-bottom: 0;
 	}
+}
+.subscribe-btn{
+	padding-left: 15px;
+    padding-right: 15px;
+    &-icon{
+    	margin-right: 5px !important;
+    }
 }

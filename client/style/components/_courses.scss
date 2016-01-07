@@ -33,6 +33,10 @@
 				}
 				@media #{$small-and-down} {
 					height: 40px;
+					display: flex;
+				    flex-flow: row nowrap;
+				    justify-content: space-between;
+				    align-items: center;
 				}
 				&--title{
 					font-size: 20px;
@@ -46,7 +50,8 @@
 					@media #{$small-and-down} {
 						text-align: center;
 						font-size: 15px;
-						margin-top: 10px;
+						margin: 0;
+    					padding: 0 15px;
 					}
 				}
 				&--subtitle{
@@ -54,6 +59,14 @@
 				    font-weight: 300;
 				    font-size: 13px;
 				    margin-top: 4px;
+				    @media #{$small-and-down} {
+				    	font-weight: 700;
+				    	margin: 0 15px;
+				    	padding: 2px 5px;
+					    border: 1px solid #FF3E7F;
+					    background-color: #FF3E7F;
+					    border-radius: 3px;
+				    }
 				}
 			}
 		}
