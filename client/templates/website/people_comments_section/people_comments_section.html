@@ -3,27 +3,18 @@
         <div class="container">
             <h4 class="section-title center-align white-text" style="margin-bottom: 0">Ellos confían en Loopa</h4>
             <div class="comments-container">
-            	<div class="comments-container-card">
-            		<img src="people-comments/c1.jpg" class="circle comments-container-card--img">
-            		<div class="comments-container-card--comment">
-              			<span class="white-text">
-                			<span class="pink-text">"</span>Giant Swarm looks set to be our solution for devops and infrastructure, allowing us to concentrate on building a great product<span class="pink-text">"</span><br><br>
-                			<span class="white-text comments-container-card--comment--author">—Sam Lown (CTO, Cabify)</span>
-              			</span>
-            		</div>
-            	</div>
+                {{#each commntsInfo}} 
+                	{{> commetCard}} 
+            	{{/each}}
 
-            	<div class="comments-container-card">
-            		<img src="people-comments/c2.jpg" class="circle comments-container-card--img">
-            		<div class="comments-container-card--comment">
-              			<span class="white-text">
-                			<span class="pink-text">"</span>Giant Swarm looks set to be our solution for devops and infrastructure, allowing us to concentrate on building a great product<span class="pink-text">"</span><br><br>
-                			<span class="white-text comments-container-card--comment--author">—Sam Lown (CTO, Cabify)</span>
-              			</span>
-            		</div>
-            	</div>
-
-        	</div>
-    	</div>
+                <ul class="comments-container-pagination">
+                    <li class="waves-effect z-depth-1"><a href="#!">1</a></li>
+                    <li class="waves-effect z-depth-1"><a href="#!">2</a></li>
+                    <li class="waves-effect z-depth-1"><a href="#!">3</a></li>
+                    <li class="waves-effect z-depth-1"><a href="#!">4</a></li>
+                    <li class="waves-effect z-depth-1"><a href="#!">5</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>

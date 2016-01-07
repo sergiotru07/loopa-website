@@ -36,9 +36,12 @@
 		&--comment{
 			padding-left: 20px;
 			margin-left: 20px;
-			border-left: 1px solid white;
-			font-size: 16px;
+			border-left: 2px solid white;
+			font-size: 18px;
 			font-weight: 200;
+			@media #{$medium-and-down}{
+				font-size: 16px;
+			}
 			@media #{$small-and-down}{
 				font-size: 13px;
 			}
@@ -46,5 +49,31 @@
 				font-weight: 600;
 			}
 		}
+	}
+	&-pagination{
+		li {
+		    display: inline-block;
+		    font-size: 18px;
+		    margin: 0 5px;
+		    padding: 0 10px;
+		    line-height: 30px;
+		    border-radius: 100%;
+		    text-align: center;
+		    &:nth-child(odd){
+      			background-color: #FF3E7F;
+      			border: 1px solid #FF3E7F;
+      			a { color: white; }
+    		}
+    		&:nth-child(even){
+      			background-color: #FEFD6A;
+      			border: 1px solid #FEFD6A;
+      			a { color: #444; }
+    		}
+    		@media #{$small-and-down}{
+				font-size: 13px;
+		    	line-height: 27px;
+			}
+    	}
+
 	}
 }
