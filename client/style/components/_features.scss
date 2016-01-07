@@ -100,29 +100,16 @@
 	background-repeat: no-repeat;
 }
 .feature-three-card{
-	background: url("features/feature_three.svg");
+	background: url("features/feature_three_new.svg");
 	background-size: 80% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-
-	@media #{$small-and-down}{
-		background: url("features/feature_three_mobile.svg");
-		background-size: 80% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
 }
 .feature-four-card{
 	background: url("features/feature_four.svg");
 	background-size: 80% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	@media #{$small-and-down}{
-		background: url("features/feature_four_mobile.svg");
-		background-size: 80% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
 }
 .feature-five-card{
 	background: url("features/feature_five.svg");
