@@ -1,5 +1,50 @@
-.container-bgimg{
-	height: 741px;
-	background: url("people-comments/bg_one.svg");
-	background-size: cover;
+.comments-container{
+	height: 520px;
+	display: flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+	background-image:url('people-comments/bg_one_new.svg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	@media #{$small-and-down}{
+		justify-content:flex-start;
+		padding-top: 10%;
+		height: 370px;
+	}
+	&-card{
+		display:flex;
+		align-items: center;
+		padding-bottom: 80px;
+		max-width: 60%;
+		@media #{$medium-and-down}{
+			max-width: 75%;
+		}
+		@media #{$small-and-down}{
+			max-width: 90%;
+			padding-bottom: 40px;
+		}
+		&--img{
+			width: 100px;
+			height: 100px;
+			@media #{$small-and-down}{
+				width: 75px;
+				height: 75px;
+			}
+		}
+		&--comment{
+			padding-left: 20px;
+			margin-left: 20px;
+			border-left: 1px solid white;
+			font-size: 16px;
+			font-weight: 200;
+			@media #{$small-and-down}{
+				font-size: 13px;
+			}
+			&--author{
+				font-weight: 600;
+			}
+		}
+	}
 }
