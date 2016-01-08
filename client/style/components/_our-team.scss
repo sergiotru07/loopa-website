@@ -1,0 +1,15 @@
+.our-team-container {
+    width: 92%;
+    margin: 0 auto !important;
+}
+.our-team-card{
+	display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    &-images{
+    	img{
+    		width:100%;
+    	}
+    }
+}
