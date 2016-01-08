@@ -1,0 +1,26 @@
+<template name= "ourTeamCard">
+	
+	<div class="col s10 m6 l3">
+                <div class="our-team-card z-depth-1">
+                    <div class="our-team-card-images">
+                        <img class="our-team-card-images--background" src="{{imageBgPath}}">
+                        <img class="our-team-card-images--person" src="{{imagePerson}}">
+                    </div>
+                    <div class="our-team-card-content">
+                        <p class="our-team-card-content-name">{{coFounderName}}</p>
+                        <p class="our-team-card-content-rol">{{coFounderRole}}</p>
+                        <p class="our-team-card-content-description">{{coFounderDescription}}</p>
+                    </div>
+                    <div class="our-team-card-follow">
+                        <p class="grey lighten-3">Follow</p>
+                    </div>
+                    <div class="our-team-card-social-icons">
+                       <a href="{{facebookLink}}"><img src="our-team/facebook.svg" class="our-team-card-social-icons--svg"></a>
+                       <a href="{{twitterLink}}"><img src="our-team/twitter.svg" class="our-team-card-social-icons--svg"></a>
+                       <a href="{{googlePlusLink}}"><img src="our-team/googleplus.svg" class="our-team-card-social-icons--svg"></a>
+                       <a href="mailto:{{emailAdress}}"><img src="our-team/email.svg" class="our-team-card-social-icons--svg"></a>
+                    </div>
+                </div>
+            </div>
+
+</template>
