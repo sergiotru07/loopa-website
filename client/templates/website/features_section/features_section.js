@@ -10,7 +10,7 @@ let cardsContent = {
         featureIndex: "feature-two",
         color: "yellow lighten-1",
         featureTitle: "Feature Two",
-        colorText:"grey-text text-darken-1",
+        colorText:"white-text",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     thirdCard: {

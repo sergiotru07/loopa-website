@@ -55,18 +55,18 @@
 .feature-one{
 	height: $feature-one-height;
 	&-card{
-		background: url("features/feature_one_new.svg");
+		background: url("features/feature_one_new-01.svg");
 		background-size: 80% 100%;
 		background-position: center;
 		background-repeat: no-repeat;
 		height: calc(#{$feature-one-height} - 20px);
 
-		/* @media #{$small-and-down}{
+		@media #{$small-and-down}{
 			background: url("features/feature_one_mobile.svg");
-			background-size: 80% 100%;
+			background-size: 80% 130%;
 			background-position: center;
 			background-repeat: no-repeat;
-		} */
+		}
 	}
 	.card-back {
 		transform: translateY(480px);
@@ -94,10 +94,13 @@
 }
 
 .feature-two-card{
-	background: url("features/feature_two_new.svg");
-	background-size: 80% 100%;
+	background: url("features/feature_two_new-01.svg");
+	background-size: 78% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	@media #{$small-and-down}{
+		background-size: 63% 100%;
+	}
 }
 .feature-three-card{
 	background: url("features/feature_three_new.svg");

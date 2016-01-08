@@ -50,7 +50,7 @@
 					@media #{$small-and-down} {
 						font-size: 15px;
 						margin: 0;
-    					padding: 0 15px;
+    					padding: 0 0 0 15px;
 					}
 				}
 				&--subtitle{
@@ -65,6 +65,9 @@
 					    border: 1px solid #FF3E7F;
 					    background-color: #FF3E7F;
 					    border-radius: 3px;
+				    }
+				    @media (max-width: 360px) {
+				    	display:none;
 				    }
 				}
 			}
