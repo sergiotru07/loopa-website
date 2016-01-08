@@ -5,6 +5,7 @@ let cardsContent = {
         featureTitle: "Feature One",
         colorText:"white-text",
         featureImage: "features/feature_one_new-01.svg",
+        featureImageSmall: "features/feature_one_mobile.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     secondCard: {
