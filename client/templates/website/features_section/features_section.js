@@ -4,6 +4,7 @@ let cardsContent = {
         color: "red lighten-1",
         featureTitle: "Feature One",
         colorText:"white-text",
+        featureImage: "features/feature_one_new-01.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     secondCard: {
@@ -11,6 +12,7 @@ let cardsContent = {
         color: "yellow lighten-1",
         featureTitle: "Feature Two",
         colorText:"white-text",
+        featureImage: "features/feature_two_new-01.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     thirdCard: {
@@ -18,6 +20,7 @@ let cardsContent = {
         color: "deep-purple lighten-2",
         featureTitle: "Feature Three",
         colorText:"white-text",
+        featureImage: "features/feature_three_new.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     fourthCard: {
@@ -25,6 +28,7 @@ let cardsContent = {
         color: "purple lighten-3",
         featureTitle: "Feature Four",
         colorText:"white-text",
+        featureImage: "features/feature_four_new.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     },
     fifthCard: {
@@ -32,6 +36,7 @@ let cardsContent = {
         color: "light-blue lighten-3",
         featureTitle: "Feature Five",
         colorText:"white-text",
+        featureImage: "features/feature_five.svg",
         featureDescription: "Lorem ipsum dolor sit amet, mutat graeco, Lorem ipsum dolor sit amet, mutat graeco"
     }
 };
