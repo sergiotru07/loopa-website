@@ -46,18 +46,12 @@ Template.featuresSection.events({
     "mouseenter .card": function(e, t) {
         $(e.target)
             .find(".card-back")
-            .attr("style", "transform: translateY(0);background-color: rgba(0, 0, 0, .03) !important;");
+            .css("transform", "translateY(0)");
     },
     "mouseleave .card": function(e, t) {
         $(e.target)
             .find(".card-back")
-            .attr("style", "background-color: rgba(0, 0, 0, .03) !important;");
-
-        Meteor.setTimeout(function() {
-            $(e.target)
-                .find(".card-back")
-                .attr("style", "");
-        }, 500);
+            .removeAttr("style");
     }
 });
 
