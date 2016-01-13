@@ -3,7 +3,7 @@ let ourTeamInfo = [{
     coFounderRole: "Web Developer",
     coFounderDescription: "Toffee chocolate cake tiramisu cupcake cake chocolate bar lemon drops. Dragée fruitcake dragée chocolate pastry. Macaroon candy canes candy canes caramels ice cream. Pudding fruitcake pastry dessert.",
     imageBgPath: "our-team/bg_andres.jpg",
-    imagePerson:"our-team/andres.jpg",
+    imagePerson:"our-team/person.jpg",
     facebookLink: "https://www.facebook.com/andresalejandro.garcia.12?ref=ts&fref=ts",
     twitterLink: "",
     googlePlusLink: "",
@@ -14,19 +14,8 @@ let ourTeamInfo = [{
     coFounderRole: "Web Designer",
     coFounderDescription: "Toffee chocolate cake tiramisu cupcake cake chocolate bar lemon drops. Dragée fruitcake dragée chocolate pastry. Macaroon candy canes candy canes caramels ice cream. Pudding fruitcake pastry dessert.",
     imageBgPath: "our-team/bg_sergio.png",
-    imagePerson:"our-team/Sergio.jpg",
+    imagePerson:"our-team/person.jpg",
     facebookLink: "https://www.facebook.com/sergioandres.trujilloardila",
-    twitterLink: "",
-    googlePlusLink: "",
-    emailAdress: ""
-
-}, {
-    coFounderName: "Alex Realpe",
-    coFounderRole: "No sabe / No responde ??¿¿",
-    coFounderDescription: "Toffee chocolate cake tiramisu cupcake cake chocolate bar lemon drops. Dragée fruitcake dragée chocolate pastry. Macaroon candy canes candy canes caramels ice cream. Pudding fruitcake pastry dessert.",
-    imageBgPath: "our-team/bg_alex.jpg",
-    imagePerson:"our-team/alex.jpg",
-    facebookLink: "https://www.facebook.com/johnalex.realpe?fref=ts",
     twitterLink: "",
     googlePlusLink: "",
     emailAdress: ""
@@ -36,7 +25,7 @@ let ourTeamInfo = [{
     coFounderRole: "Graphic Designer",
     coFounderDescription: "Toffee chocolate cake tiramisu cupcake cake chocolate bar lemon drops. Dragée fruitcake dragée chocolate pastry. Macaroon candy canes candy canes caramels ice cream. Pudding fruitcake pastry dessert.",
     imageBgPath: "our-team/bg_ricardo.png",
-    imagePerson:"our-team/ricardo.jpg",
+    imagePerson:"our-team/person.jpg",
     facebookLink: "https://www.facebook.com/ricardo.v.restrepo?fref=ts",
     twitterLink: "",
     googlePlusLink: "",

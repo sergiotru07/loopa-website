@@ -71,17 +71,14 @@
 }
 
 .contenedor-mobile{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	.title-mobile{
 		font-size: 45px;
 		font-weight: 300;
-		padding: 0 5%;
-		margin-bottom: 50px;
+		padding: 50px 5%;
+		margin: 0 !important;
 		@media #{$small-and-down} {
     	font-size: 25px;
-    	margin-bottom: 40px;
+    	padding: 30px 5%;
   		}
 	}
 	.video-mobile{

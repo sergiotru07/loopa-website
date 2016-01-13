@@ -4,22 +4,21 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="700px" height="700px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" xml:space="preserve">
 <rect fill="#DF773E" width="700" height="700"/>
-<polygon opacity="0.3" fill="#444444" points="706.929,312.24 535.716,146.076 116.339,424.979 399.229,700.5 700,700.5 "/>
 <g>
 	<path fill="#686868" d="M194.5,164.057c0-2.181-1.467-1.557-1.846-1.557h-12.692h-4.529H162.74c-0.379,0-3.24-0.624-3.24,1.557
 		v21.439l17.5,0.063l17.5-0.063V164.057z"/>
 	<path fill="#EBEBEB" d="M226.5,174.048c0-1.263-0.664-2.548-0.882-2.548h-7.352h-2.625h-7.352c-0.218,0-0.79,1.285-0.79,2.548
-		v12.418l9.5,0.037l9.5-0.037V174.048z"/>
+		v12.418l9.5,0.037l9.5-0.037L226.5,174.048L226.5,174.048z"/>
 	<g>
 		<path fill="#EBEBEB" d="M578.5,431.08c0,4.301-3.281,7.42-7.583,7.42H151.67c-4.299,0-8.17-3.119-8.17-7.42V192.901
 			c0-4.301,3.871-7.401,8.17-7.401h419.247c4.302,0,7.583,3.1,7.583,7.401V431.08z"/>
 	</g>
 	<path fill="#444444" d="M542.205,184.133c0,0.729-0.592,2.367-1.32,2.367h-84.012c-0.729,0-1.318-1.639-1.318-2.367l6.489-37.734
-		c0-0.729,0.591-0.899,1.319-0.899h71.033c0.729,0,1.319,0.17,1.319,0.899L542.205,184.133z"/>
+		c0-0.729,0.591-0.899,1.319-0.899h71.033c0.729,0,1.318,0.17,1.318,0.899L542.205,184.133z"/>
 	<circle fill="#313131" cx="361.293" cy="318.48" r="108.64"/>
 	<g>
 		
-			<image overflow="visible" opacity="0.47" width="185" height="184" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC5CAYAAACfmiVfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+			<image overflow="visible" opacity="0.47" enable-background="new    " width="186" height="185" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC5CAYAAACfmiVfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAE5BJREFUeNrsnQlz28gRhYcQdFCi
 7tPX2rvJbiX//8ck2WS9a9mSJVv3SVGUGEzV60JrDIIAiWNIvq7qAk3JEI9vHl43BoNGr9czjEKj
 UcA++KUU/aUQ9MJAbiTkMIC7yUFA0CsFOw1k+ziIckZlkBN2+0U8R/mk8lmBnTYI+CUS9ELAdiHW
@@ -108,7 +107,7 @@ wNcTyQKn5dlv+b0sSq67I7pf/eR4bpm+fKf895UC+grbW2Tb2edEq/e0gp4H+nnzck33RYDdUoNA
 33UvdCBfMC/79TM5QHevrtK2QuDXF6Ro2DX890q1OylwT9cXP2WgD4J+RqmxVnwNvu7QzKhaYF4V
 vnogZAXdvbrq1rEYWtFdkNsO1I8J9mfq4Cbo6dC74IcJqj+XYFtmHUWX3xnUiZEvwLUnAu+TSb5o
 /NEpTPuBzS+YoKe2B9MKzaRWo3R43IGQVdG1F08qFpMK1eeULg2DoI8MfiOhtVhm1yWt9UiwCXqp
-4A+yP0X20Q2hJujjMhDyAs8g6AwGQWcwfoj/CzAAGX9mZ7WQD44AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 268.981 226.981)">
+4A+yP0X20Q2hJujjMhDyAs8g6AwGQWcwfoj/CzAAGX9mZ7WQD44AAAAASUVORK5CYII=" transform="matrix(0.9946 0 0 0.9946 268.9814 226.9805)">
 		</image>
 		<g>
 			<circle fill="#CACACA" cx="361.294" cy="318.48" r="85.878"/>
@@ -118,35 +117,37 @@ vnogZAXdvbrq1rEYWtFdkNsO1I8J9mfq4Cbo6dC74IcJqj+XYFtmHUWX3xnUiZEvwLUnAu+TSb5o
 	<circle fill="#696969" cx="361.294" cy="318.48" r="64.262"/>
 	<circle fill="#4E4E4E" cx="361.294" cy="318.48" r="57.535"/>
 	<circle fill="#2F2F2F" cx="361.294" cy="318.48" r="37.934"/>
-	<radialGradient id="SVGID_1_" cx="361.2939" cy="351.5781" r="20.4492" gradientUnits="userSpaceOnUse">
+	
+		<radialGradient id="SVGID_1_" cx="476.2949" cy="293.4219" r="20.4487" gradientTransform="matrix(1 0 0 -1 -115 645)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#404040"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</radialGradient>
-	<circle opacity="0.4" fill="url(#SVGID_1_)" cx="361.294" cy="351.578" r="20.449"/>
-	<radialGradient id="SVGID_2_" cx="361.2939" cy="385.9746" r="9.7744" gradientUnits="userSpaceOnUse">
+	<circle opacity="0.4" fill="url(#SVGID_1_)" enable-background="new    " cx="361.294" cy="351.578" r="20.449"/>
+	
+		<radialGradient id="SVGID_2_" cx="476.2939" cy="259.0249" r="9.7742" gradientTransform="matrix(1 0 0 -1 -115 645)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#404040"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</radialGradient>
-	<circle opacity="0.4" fill="url(#SVGID_2_)" cx="361.294" cy="385.975" r="9.774"/>
-	<path fill="#E6E6E6" d="M526.5,180.688c0,0.57-0.489,0.813-1.062,0.813h-55.304c-0.572,0-0.635-0.242-0.635-0.813v-29.64
-		c0-0.57,0.063-0.547,0.635-0.547h55.304c0.572,0,1.062-0.023,1.062,0.547V180.688z"/>
+	<circle opacity="0.4" fill="url(#SVGID_2_)" enable-background="new    " cx="361.294" cy="385.975" r="9.774"/>
+	<path fill="#E6E6E6" d="M526.5,180.688c0,0.57-0.489,0.813-1.063,0.813h-55.304c-0.572,0-0.635-0.242-0.635-0.813v-29.64
+		c0-0.57,0.063-0.547,0.635-0.547h55.304c0.572,0,1.063-0.023,1.063,0.547V180.688z"/>
 	<g>
-		<path fill="#686868" d="M518.5,213.775c0,0.4-0.325,0.725-0.726,0.725h-38.549c-0.4,0-0.726-0.324-0.726-0.725v-20.551
-			c0-0.4,0.325-0.725,0.726-0.725h38.549c0.4,0,0.726,0.324,0.726,0.725V213.775z"/>
+		<path fill="#686868" d="M518.5,213.775c0,0.4-0.325,0.725-0.726,0.725h-38.55c-0.399,0-0.726-0.324-0.726-0.725v-20.551
+			c0-0.4,0.325-0.725,0.726-0.725h38.55c0.399,0,0.726,0.324,0.726,0.725V213.775z"/>
 	</g>
 	<g>
-		<path fill="#D1D1D1" d="M527.5,149.5v30.101c0,0.571-0.229,0.899-0.799,0.899h-55.643c-0.57,0-1.15-0.501-1.15-1.073"/>
+		<path fill="#D1D1D1" d="M527.5,149.5v30.101c0,0.571-0.229,0.899-0.799,0.899h-55.644c-0.569,0-1.149-0.501-1.149-1.073"/>
 	</g>
-	<circle opacity="0.1" fill="#2F2F2F" cx="498.88" cy="164.007" r="9.38"/>
+	<circle opacity="0.1" fill="#2F2F2F" enable-background="new    " cx="498.88" cy="164.007" r="9.38"/>
 	<g>
-		<path fill="#444444" d="M519.5,194.5v19.59c1,1.862-0.708,2.41-1.109,2.41h-39.023c-0.4,0-0.533-0.481-0.533-0.882"/>
+		<path fill="#444444" d="M519.5,194.5v19.59c1,1.862-0.708,2.41-1.109,2.41h-39.022c-0.4,0-0.533-0.481-0.533-0.882"/>
 	</g>
 	<path fill="#444444" d="M247.142,319.09c0-31.074,12.422-58.59,32.565-79.59H174.5v178h129.329
 		C269.925,397.5,247.142,361.181,247.142,319.09z"/>
 	<path fill="#444444" d="M476.714,319.09c0-31.074-12.421-58.59-32.563-79.59H577.5v178H420.027
 		C453.93,397.5,476.714,361.181,476.714,319.09z"/>
 	<g>
-		<path fill="#313131" d="M181.5,417.355c0,3.777-0.558,7.145-1.211,7.145h-63.776c-0.655,0-1.012-3.367-1.012-7.145V206.624
+		<path fill="#313131" d="M181.5,417.355c0,3.776-0.558,7.145-1.211,7.145h-63.776c-0.655,0-1.012-3.367-1.012-7.145V206.624
 			c0-3.777,0.357-7.124,1.012-7.124h63.776c0.653,0,1.211,3.347,1.211,7.124V417.355z"/>
 	</g>
 	<path fill="#313131" d="M226.794,230.467c0-5.821-3.327-10.54-9.147-10.54s-9.147,4.718-9.147,10.54v22.064
@@ -154,13 +155,14 @@ vnogZAXdvbrq1rEYWtFdkNsO1I8J9mfq4Cbo6dC74IcJqj+XYFtmHUWX3xnUiZEvwLUnAu+TSb5o
 	<circle fill="#EBEBEB" cx="229.38" cy="252.531" r="10.539"/>
 	<circle fill="#999999" cx="217.049" cy="229.168" r="3.947"/>
 	<circle fill="#999999" cx="459.772" cy="203.858" r="11.639"/>
-	<radialGradient id="SVGID_3_" cx="361.1768" cy="254.3198" r="40.1417" gradientUnits="userSpaceOnUse">
+	
+		<radialGradient id="SVGID_3_" cx="476.1768" cy="390.6797" r="40.1418" gradientTransform="matrix(1 0 0 -1 -115 645)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#404040"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</radialGradient>
-	<path opacity="0.5" fill="url(#SVGID_3_)" d="M361.059,276.038c-29.136,0-52.333-25.654-52.333-25.654
-		c14.489-11.15,32.637-17.782,52.333-17.782h0.234c19.698,0,37.846,6.632,52.334,17.782c0,0-23.196,25.654-52.334,25.654"/>
+	<path opacity="0.5" fill="url(#SVGID_3_)" enable-background="new    " d="M361.059,276.038c-29.136,0-52.333-25.654-52.333-25.654
+		c14.489-11.15,32.637-17.782,52.333-17.782h0.234c19.698,0,37.846,6.632,52.334,17.782c0,0-23.195,25.654-52.334,25.654"/>
 	<rect x="159.5" y="180.5" fill="#444444" width="35" height="6"/>
-	<rect x="206.5" y="180.5" opacity="0.2" fill="#444444" width="20" height="6"/>
+	<rect x="206.5" y="180.5" opacity="0.2" fill="#444444" enable-background="new    " width="20" height="6"/>
 </g>
 </svg>

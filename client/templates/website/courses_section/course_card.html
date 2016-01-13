@@ -1,4 +1,14 @@
 <template name="courseCard">
+    <div class="col s6 m6 l4">
+        <div class="{{color}} hoverable z-depth-1 course-card" name="{{courseIndex}}">
+            <img class="course-card-img" src="{{courseImage}}">
+            <div class="course-card-info">
+                <h5 class="course-card-info--title white-text">{{courseTitle}}</h5>
+                <h6 class="course-card-info--subtitle white-text"><span class="hide-on-small-only">Total de cursos:</span> {{totalCourses}}</h6>
+            </div>
+        </div>
+    </div>
+    {{!--
     <div class="course-card col s6 m6 l4" style="height: {{courseCardHeight}}px;">
         <a href="#">
             <div class="course-card-main {{courseIndex}} z-depth-1 hoverable" name="{{courseIndex}}" style="height: {{courseMainCardHeight}}px">
@@ -8,5 +18,5 @@
                 </div>
             </div>
         </a>
-    </div>
+    </div> --}}
 </template>

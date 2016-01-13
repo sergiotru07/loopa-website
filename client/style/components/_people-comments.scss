@@ -28,11 +28,15 @@
 		&--img{
 			width: 100px;
 			height: 100px;
+			min-width: 100px;
+			min-height: 100px;
 			border-radius: 50%;
 			-webkit-border-radius: 50%;
 			@media #{$small-and-down}{
 				width: 75px;
 				height: 75px;
+				min-width: 75px;
+			min-height: 75px;
 			}
 		}
 		&--comment{
